@@ -1,0 +1,38 @@
+
+.content {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  min-height: 400px;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+.image__container {
+  width: 80%;
+  position: relative;
+}
+
+.image {
+  position: absolute;
+  top: -18%;
+  height: 122%;
+  width: auto;
+  border-bottom: 2px solid var(--primary);
+}
+
+.dots {
+  top: 40%;
+  width: 12vmin;
+  left: 58%;
+  z-index: 4;
+  position: absolute;
+}

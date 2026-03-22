@@ -1,0 +1,63 @@
+@use 'constants' as *;
+@use 'functions' as *;
+@use 'media' as *;
+@use 'mixins' as *;
+
+// Медиа-запросы для типографики
+@include tablet {
+  // Шрифты для планшетов
+  h1, .h1 {
+    font-size: #{fluid(58, 32)};
+  }
+
+  h2, .h2 {
+    font-size: #{fluid(48, 28)};
+  }
+
+  h3, .h3 {
+    font-size: #{fluid(38, 24)};
+  }
+
+  h4, .h4 {
+    font-size: #{fluid(32, 20)};
+  }
+
+  h5, .h5 {
+    font-size: #{fluid(22, 16)};
+  }
+
+  h6, .h6 {
+    font-size: #{fluid(20, 14)};
+  }
+
+  body {
+    font-size: #{fluid(16, 14)};
+  }
+}
+
+// Утилитарные классы для скрытия/показа
+.visible-desktop {
+  @include tablet {
+    display: none !important;
+  }
+}
+
+.visible-tablet {
+  display: none !important;
+
+  @include tablet {
+    display: block !important;
+  }
+
+  @include mobile {
+    display: none !important;
+  }
+}
+
+.visible-mobile {
+  display: none !important;
+
+  @include mobile {
+    display: block !important;
+  }
+}

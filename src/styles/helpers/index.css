@@ -1,0 +1,20 @@
+/* Error: Two forwarded modules both define a variable named $laptop.
+ *     ,
+ * 1   | @forward 'constants';
+ *     | ==================== original @forward
+ * ... |
+ * 4   | @forward 'media';
+ *     | ^^^^^^^^^^^^^^^^ new @forward
+ *     '
+ *   index.scss 4:1  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Two forwarded modules both define a variable named $laptop.\a     \2577 \a 1   \2502  @forward 'constants';\d\a     \2502  \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  original @forward\a... \2502 \a 4   \2502  @forward 'media';\a     \2502  ^^^^^^^^^^^^^^^^ new @forward\a     \2575 \a   index.scss 4:1  root stylesheet";
+}

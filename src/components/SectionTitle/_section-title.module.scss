@@ -1,0 +1,27 @@
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titleText {
+  text-transform: lowercase;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  color: var(--main-color-text);
+
+  &:before {
+    content: "#";
+    color: var(--primary);
+  }
+
+  &:after {
+    content: "---------------------------";
+    font-size: 20px;
+    margin-left: 20px;
+    white-space: nowrap;
+    color: var(--primary);
+  }
+}

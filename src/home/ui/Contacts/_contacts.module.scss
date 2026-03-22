@@ -1,0 +1,48 @@
+.contacts {
+}
+
+.content {
+  margin: 20px 0 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+.contactList {
+  padding-top: 8px;
+}
+
+.title {
+  font-weight: bold;
+  color: var(--main-color-text);
+}
+
+.contactContainer {
+  display: inline-flex;
+  flex-direction: column;
+  border: 1px solid var(--main-color);
+  padding: 16px 0 2px 16px;
+  width: fit-content;
+}
+
+.container {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+
+  &:hover,
+  &:active {
+    fill: var(--main-color-text);
+    color: var(--main-color-text);
+    cursor: pointer;
+  }
+}

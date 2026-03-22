@@ -1,0 +1,67 @@
+@use "helpers/constants" as *;
+@use "helpers/functions" as *;
+@use "helpers/constants" as *;
+
+:root {
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+
+  --color-black-06: #0F0F0F;
+  --color-black-08: #141414;
+  --color-black-10: #1A1A1A;
+  --color-black-12: #1F1F1F;
+  --color-black-15: #262626;
+  --color-black-20: #333333;
+  --color-black-25: #404040;
+  --color-black-30: #4C4C4C;
+
+  --color-gray-60: #999999;
+  --color-gray-65: #A6A6A6;
+  --color-gray-70: #B3B3B3;
+  --color-gray-75: #BFBFBF;
+  --color-gray-90: #E4E4E7;
+  --color-gray-95: #F1F1F3;
+  --color-gray-97: #F7F7F8;
+  --color-gray-99: #FCFCFD;
+
+  --background-color-main: #191820;
+  --primary: #C470DB;
+  --primary-color-opacity: rgba(199, 120, 221, 0.20);
+  --main-color: #ABB2BF;
+  --main-color-text: #FFFFFF;
+  --main-color-opacity: rgba(171, 178, 191, 0.20);
+
+  --border: var(--border-width-s) solid var(--color-black-15);
+
+  --fs-xl: 32px;
+  --fs-l: 24px;
+  --fs-main: 16px;
+
+  --border-width-l: 4px;
+  --border-width-m: 3px;
+  --border-width-s: 1px;
+
+  --font-family-base: "Fira Code", sans-serif;
+
+  --container-width: #{fluid-to-laptop(
+    $container-desktop-width,
+    $container-laptop-width
+  )};
+  --container-padding-x: 16px;
+
+  --section-padding-y: #{fluid(75, 40)};
+
+  $colors: (
+    primary: 287 60% 65%,
+    primary-op: 287 60% 65% / 0.1,
+    gray: 219 14% 71%,
+    gray-op: 219 14% 71% / 0.1,
+    background: 218 12% 18%,
+    white: 0 0% 100%,
+  );
+
+  --animate-bounce: bounce 12s ease infinite;
+  $desktopScreen: 1024px;
+  $tabletScreen: 768px;
+  $mobileScreen: 500px;
+}

@@ -1,0 +1,33 @@
+.main {
+  max-width: 1280px;
+  //margin-top: 40px;
+  scroll-margin-top: 80px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+
+  .about {
+    margin-top: 4rem;
+  }
+
+  .hero {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .projects {
+    margin-top: 8rem;
+  }
+
+  .skills {
+    margin-top: 6rem;
+  }
+
+  .contacts {
+    margin-top: 6rem;
+  }
+}
