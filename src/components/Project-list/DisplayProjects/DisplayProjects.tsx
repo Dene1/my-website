@@ -4,7 +4,6 @@ import {projects} from "@/utils/projectData.ts";
 
 export const DisplayProjects = () => {
   return (
-    // <div className={styles.projectCards}>
     <>
       {projects.map((project) => (
         <div key={project.id}
@@ -32,6 +31,7 @@ export const DisplayProjects = () => {
                           className="button " />
               <CustomLink href={project.links.live}
                           variant='linksButton'
+                          target='_blank'
                           content="Live <~>"
                           className="button " />
             </div>
@@ -39,6 +39,5 @@ export const DisplayProjects = () => {
         </div>
       ))}
     </>
-    //</div>
   )
 }

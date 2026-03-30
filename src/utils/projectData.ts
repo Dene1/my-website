@@ -23,7 +23,7 @@ export const projects: Projects[] = [
     image: sneakers,
     techs: ['React', 'CSS', 'Redux', 'Express.js'],
     links: {
-      figma: 'https://figma.com/community/file/1198393124994627983',
+      // figma: 'https://figma.com/community/file/1198393124994627983',
       live: 'https://deplos.github.io',
       github: 'https://github.com/Deplos/deplos.github.io'
     }
@@ -35,7 +35,7 @@ export const projects: Projects[] = [
     image: pomodoro,
     techs: ['JS', 'SCSS'],
     links: {
-      figma: 'https://www.figma.com/design/JHbFL5kV72vlsOv2NGiPCy/⏰-Pomo---Pomodoro-Timer-App-Prototype--v-0.1.0---Community-?t=SsHd7l8sTyMC0tTE-0',
+      // figma: 'https://www.figma.com/design/JHbFL5kV72vlsOv2NGiPCy/⏰-Pomo---Pomodoro-Timer-App-Prototype--v-0.1.0---Community-?t=SsHd7l8sTyMC0tTE-0',
       live: 'https://pomodoro-wt4w.onrender.com',
       github: 'https://github.com/Dene1/Pomodoro'
     }
@@ -45,7 +45,7 @@ export const projects: Projects[] = [
     name: 'Todo list',
     description: 'Todo list different state-managers',
     image: sneakers,
-    techs: ['React', 'CSS', 'Context', 'Redux', 'Zustand', 'RTK', 'RTK Query'],
+    techs: ['Context', 'Zustand', 'RTK', 'RTKQuery', 'Redux', 'React', 'CSS'],
     links: {
       live: 'https://deplos.github.io',
       github: 'https://github.com/Dene1/to-do-list-on-different-state-managers'
@@ -58,7 +58,7 @@ export const projects: Projects[] = [
     image: tictac,
     techs: ['JS', 'CSS',],
     links: {
-      figma: 'https://figma.com/community/file/1198393124994627983',
+      // figma: 'https://figma.com/community/file/1198393124994627983',
       live: 'https://deplos.github.io',
       github: 'https://github.com/Dene1/React.tic-tac-toe'
     }

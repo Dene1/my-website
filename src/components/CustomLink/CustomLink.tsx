@@ -31,7 +31,7 @@ const variantClasses: Record<Variant, string> = {
   linkTheme: styles.linkTheme
 };
 
-export function CustomLink({
+export const CustomLink = ({
                              content = 'link',
                              variant = 'linksMain',
                              disabled = false,
@@ -42,7 +42,7 @@ export function CustomLink({
                              className = "",
                              isActive = false,
                              ...props
-                           }: LinkProps) {
+                           }: LinkProps) => {
   const variantClass = variantClasses[variant] || styles.linkMain;
   const activeClass = isActive ? styles.active : '';
 
@@ -63,7 +63,7 @@ export function CustomLink({
   }
 
   return (
-    <a href={href ? `/${href}` : "#"}
+    <a href={href ? `${href}` : "#"}
        {...commonProps}
     >
       {content}

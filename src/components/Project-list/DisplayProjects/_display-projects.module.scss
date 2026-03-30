@@ -20,6 +20,8 @@
   gap: 10px;
   padding: 8px;
   border-bottom: 1px solid var(--main-color);
+  text-wrap: nowrap;
+  overflow: hidden;
 }
 
 .projectImg {
@@ -37,7 +39,11 @@
 }
 
 .projectDescription {
-  padding-left: 20px;
+  padding-inline: 20px;
+  min-height: 3em;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
 
 .projectLinks {
