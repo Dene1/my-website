@@ -1,3 +1,5 @@
+@use "../../../styles/helpers/mixins" as *;
+
 .hero {
   &Content {
     flex-grow: 1;
@@ -67,4 +69,13 @@
   width: 12vmin;
   left: 70%;
   z-index: 4;
+}
+
+.rec {
+  position: absolute;
+  top: 17.8%;
+  width: 10vmin;
+  left: -14%;
+  z-index: 4;
+  @include bounce($up: 40%, $down: -20%, $duration: 8s)
 }

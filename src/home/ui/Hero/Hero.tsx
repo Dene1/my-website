@@ -1,5 +1,6 @@
 import styles from "./_hero.module.scss";
 import dots from "/icons/dots5.svg";
+import rect from "/icons/rect.svg";
 import main from "/img/main-pirple.png";
 import {CustomLink} from "@components";
 
@@ -27,7 +28,7 @@ export const Hero = () => (
       <img className={styles.heroImage}
            src={main}
            loading='lazy'
-           alt='' />
+           alt='hero-image' />
 
 
       <div className={styles.heroStatus}>
@@ -39,5 +40,10 @@ export const Hero = () => (
            loading='lazy'
            alt='' />
     </div>
+    <img
+      className={styles.rec}
+      src={rect}
+      alt='rec'
+      loading='lazy' />
   </>
 );

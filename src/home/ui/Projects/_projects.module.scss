@@ -1,0 +1,10 @@
+@use "../../../styles/helpers/mixins" as *;
+
+.rec {
+  position: absolute;
+  width: 10vmin;
+  top: 68%;
+  right: -18%;
+  z-index: 4;
+  @include bounce($up: 40%, $down: -20%, $duration: 8s)
+}

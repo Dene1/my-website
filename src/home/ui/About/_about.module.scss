@@ -1,3 +1,4 @@
+@use "../../../styles/helpers/mixins" as *;
 
 .content {
   margin: 20px;
@@ -30,9 +31,10 @@
 }
 
 .dots {
-  top: 40%;
+  top: 36%;
   width: 12vmin;
-  left: 58%;
+  left: 50%;
   z-index: 4;
   position: absolute;
+  @include bounce($up: 40%, $down: -20%, $duration: 8s)
 }
