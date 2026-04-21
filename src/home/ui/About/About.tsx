@@ -19,7 +19,7 @@ export const About = () => (
             I’m a self-taught front-end developer based in Kazan, Russia. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences.
           </div>
           <div className={styles.text}>
-            Transforming my creativity and knowledge into a websites has been my passion for over two years. I always strive to learn about the newest technologies and frameworks.
+            Transforming my creativity and knowledge into a websites has been my passion for over one years. I always strive to learn about the newest technologies and frameworks.
           </div>
         </div>
 
