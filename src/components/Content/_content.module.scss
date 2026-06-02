@@ -1,7 +1,8 @@
 .main {
   max-width: 1280px;
   //margin-top: 40px;
-  scroll-margin-top: 80px;
+  // scroll-margin-top: 80px;
+  margin-top: 6rem;
   width: 75%;
   margin-left: auto;
   margin-right: auto;
@@ -12,7 +13,6 @@
   }
 
   .hero {
-    margin-top: 6rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -21,6 +21,7 @@
   }
 
   .projects {
+  position: relative;
     margin-top: 8rem;
   }
 

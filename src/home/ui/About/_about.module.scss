@@ -1,4 +1,4 @@
-@use "../../../styles/helpers/mixins" as *;
+@use "@/styles/helpers/mixins" as *;
 
 .content {
   margin: 20px;
@@ -14,27 +14,45 @@
   flex-direction: column;
   gap: 20px;
   width: 60%;
+  padding-top: 60px;
   margin-bottom: 20px;
 }
 
+//.image__container {
+//  width: 80%;
+//  position: relative;
+//}
+//
+//.image {
+//  position: absolute;
+//  top: -18%;
+//  height: 100%;
+//  width: auto;
+//  object-fit: contain;
+//  border-bottom: 2px solid var(--primary);
+//}
+
 .image__container {
-  width: 80%;
+  width: 40%;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .image {
-  position: absolute;
-  top: -18%;
-  height: 122%;
-  width: auto;
+  position: relative;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
   border-bottom: 2px solid var(--primary);
 }
 
 .dots {
-  top: 36%;
-  width: 12vmin;
-  left: 50%;
-  z-index: 4;
   position: absolute;
+  top: 40%;
+  left: 60%;
+  width: 50%;
+  z-index: 4;
   @include bounce($up: 40%, $down: -20%, $duration: 8s)
 }
