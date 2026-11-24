@@ -1,7 +1,7 @@
 import styles from './_header.module.scss'
 import {CustomLink, IconButton} from '@components'
-import {useTranslation} from 'react-i18next'
-import {useState} from 'react'
+// import {useTranslation} from 'react-i18next'
+// import {useState} from 'react'
 import {Link, useLocation} from 'wouter'
 
 const links = [
@@ -19,25 +19,25 @@ const media = [
 ]
 
 export const Header = () => {
-	const {t, i18n} = useTranslation()
+	// const {t, i18n} = useTranslation()
 	const [location] = useLocation()
 	
-	const handleChangeLanguage = () => {
-		const newLanguage = i18n.language === 'en' ? 'ru' : 'en'
-		i18n.changeLanguage(newLanguage)
-		setLang(newLanguage)
-	}
+	// const handleChangeLanguage = () => {
+	// 	const newLanguage = i18n.language === 'en' ? 'ru' : 'en'
+	// 	i18n.changeLanguage(newLanguage)
+	// 	setLang(newLanguage)
+	// }
 
-	const handleClick = (e, sectionId) => {
-		e.preventDefault()
-		const element = document.getElementById(sectionId)
-		element.scrollIntoView({
-			behavior: 'smooth',
-			block: 'center'
-		})
-	}
+	// const handleClick = (e, sectionId) => {
+	// 	e.preventDefault()
+	// 	const element = document.getElementById(sectionId)
+	// 	element.scrollIntoView({
+	// 		behavior: 'smooth',
+	// 		block: 'center'
+	// 	})
+	// }
 
-	const [lang, setLang] = useState('en')
+	// const [lang, setLang] = useState('en')
 
 	const isLinkActive = (href: string) => location === `${href}`
 

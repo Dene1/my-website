@@ -1,8 +1,10 @@
 import {createContext, useEffect, useMemo, useState} from 'react'
+import type {ThemeProviderProps} from '@/context/types.ts'
 
-export const ThemeContext = createContext()
+type ThemeContextType = { theme: string; changeTheme: (t: string) => void };
+export const ThemeContext = createContext<ThemeContextType | undefined>(undefined)
 
-const ThemeProvider = ({children}) => {
+const ThemeProvider = ({children}: ThemeProviderProps) => {
 	const [theme, setTheme] = useState(localStorage.getItem('appTheme') || 'dark')
 
 	const changeTheme = () => setTheme(prevTheme => prevTheme === 'dark' ? 'light' : 'dark')

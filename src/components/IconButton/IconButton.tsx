@@ -5,7 +5,8 @@ import {useContext} from "react";
 import {ThemeContext} from "@/context/ThemeContext.tsx";
 
 export function IconButton({type, size = 16}: { type: string, size?: number }) {
-  const {theme, changeTheme} = useContext(ThemeContext)
+  // @ts-ignore
+	const {theme, changeTheme} = useContext(ThemeContext)
 
   const handleClick = () => {
     if (type === 'ThemeToggle') {
