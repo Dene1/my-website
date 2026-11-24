@@ -1,12 +1,19 @@
-import {Switch} from "wouter";
-import {Home} from "lucide-react";
+import {Route} from 'wouter'
+import {Content} from '@components'
+import {Contacts, Projects, Skills} from '@/home/ui'
 
 const Router = () => {
-  return (
-    <Switch>
-      <Router path="/" component={Home} />
-    </Switch>
-  )
+	return (
+		<Route path="/"
+		       component={Content}>
+			<Route path="/projects"
+			       component={Projects} />
+			<Route path="/about-me"
+			       component={Skills} />
+			<Route path="/contact"
+			       component={Contacts} />
+		</Route>
+	)
 }
 
 export default Router

@@ -7,7 +7,7 @@ export const Content = () => {
 		{id: 'projects', component: <Projects />},
 		{id: 'skills', component: <Skills />},
 		{id: 'about', component: <About />},
-		{id: 'contacts', component: <Contacts />}
+		{id: 'contact', component: <Contacts />}
 	]
 
 	return <main className={styles.main}>

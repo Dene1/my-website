@@ -3,7 +3,7 @@ import email from '/icons/email.svg'
 import telegram from '/icons/telegram.svg'
 import {CustomLink, SectionTitle} from '@/components'
 
-export const Contacts = () => (
+const Contacts = () => (
 	<>
 		<SectionTitle title="contacts" />
 
@@ -40,3 +40,4 @@ export const Contacts = () => (
 		</div>
 	</>
 )
+export default Contacts

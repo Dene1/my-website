@@ -1,16 +1,5 @@
 @use "../../../styles/helpers/mixins" as *;
 
-
-// .rec {
-//   display: inline;
-//   position: absolute;
-//   width: 10vmin;
-//   top: 68%;
-//   right: -20%; 
-//   z-index: 4;
-//   @include bounce($up: 40%, $down: -20%, $duration: 8s);
-// }
-
 .rec {
   display: inline-block;  /* или block */
    width: 50px;
@@ -19,5 +8,5 @@
     position: absolute;
   top: 68%;
   right: -20%;
-  @include bounce($up: 40%, $down: -20%, $duration: 8s);
+  @include bounce($up: 40%, $down: -20%, $duration: 8s)
 }

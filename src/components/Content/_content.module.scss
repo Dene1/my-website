@@ -1,16 +1,10 @@
 .main {
   max-width: 1280px;
-  //margin-top: 40px;
-  // scroll-margin-top: 80px;
   margin-top: 6rem;
   width: 75%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
-
-  .about {
-    margin-top: 4rem;
-  }
 
   .hero {
     display: flex;
@@ -21,15 +15,10 @@
   }
 
   .projects {
-  position: relative;
-    margin-top: 8rem;
+    position: relative;
   }
+}
 
-  .skills {
-    margin-top: 6rem;
-  }
-
-  .contacts {
-    margin-top: 6rem;
-  }
+section {
+  margin-bottom: 8rem;
 }
